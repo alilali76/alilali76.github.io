@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>namazsaatleri</title>
+    <script src="gebetszeiten.js"></script>
+    <link rel="stylesheet" href="gebetszeiten.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+    <h1>Hagen 2025 Namaz Saatleri</h1>
+
+<table id="gebetszeiten">
+    <thead>
+        <tr>
+            <th>Tarih</th>
+            <th>Imsak</th>
+            <th>Sabah</th>
+            <th>Günes</th>
+            <th>Öglen</th>
+            <th>Ikindi</th>
+            <th>Gün Batimi</th>
+            <th>Aksam</th>
+            <th>Yatsi</th>
+            <th>Gece Yarisi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="date"></td>
+            <td id="imsak"></td>
+            <td id="fajr"></td>
+            <td id="sunrise"></td>
+            <td id="dhuhr"></td>
+            <td id="asr"></td>
+            <td id="sunset"></td>
+            <td id="maghrib"></td>
+            <td id="isha"></td>
+            <td id="midnight"></td>
+        </tr>
+    </tbody>
+</table>
+
+<table id="gebetszeitenmobil">
+  <tbody>
+    <tr>
+      <th>Tarih</th>
+      <td id="date"></td>
+    </tr>
+    <tr>
+      <th>Imsak</th>
+      <td id="imsak"></td>
+    </tr>
+    <tr>
+      <th>Sabah</th>
+      <td id="fajr"></td>
+    </tr>
+    <tr>
+      <th>Günes</th>
+      <td id="sunrise"></td>
+    </tr>
+    <tr>
+      <th>Öglen</th>
+      <td id="dhuhr"></td>
+    </tr>
+    <tr>
+      <th>Ikindi</th>
+      <td id="asr"></td>
+    </tr>
+    <tr>
+      <th>Gün Batimi</th>
+      <td id="sunset"></td>
+    </tr>
+    <tr>
+      <th>Aksam</th>
+      <td id="maghrib"></td>
+    </tr>
+    <tr>
+      <th>Yatsi</th>
+      <td id="isha"></td>
+    </tr>
+    <tr>
+      <th>Gece Yarisi</th>
+      <td id="midnight"></td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="gebetszeitensammlung">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nov 1</td>
+      <td>05 : 32</td>
+      <td>05 : 32</td>
+      <td>07 : 23</td>
+      <td>12 : 13</td>
+      <td>14 : 36</td>
+      <td>17 : 03</td>
+      <td>17 : 28</td>
+      <td>18 : 37</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 2</td>
+      <td>05 : 34</td>
+      <td>05 : 34</td>
+      <td>07 : 25</td>
+      <td>12 : 13</td>
+      <td>14 : 34</td>
+      <td>17 : 01</td>
+      <td>17 : 26</td>
+      <td>18 : 35</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 3</td>
+      <td>05 : 35</td>
+      <td>05 : 35</td>
+      <td>07 : 27</td>
+      <td>12 : 13</td>
+      <td>14 : 33</td>
+      <td>17 : 00</td>
+      <td>17 : 25</td>
+      <td>18 : 34</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 4</td>
+      <td>05 : 37</td>
+      <td>05 : 37</td>
+      <td>07 : 29</td>
+      <td>12 : 13</td>
+      <td>14 : 31</td>
+      <td>16 : 58</td>
+      <td>17 : 23</td>
+      <td>18 : 32</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 5</td>
+      <td>05 : 38</td>
+      <td>05 : 38</td>
+      <td>07 : 31</td>
+      <td>12 : 13</td>
+      <td>14 : 30</td>
+      <td>16 : 56</td>
+      <td>17 : 22</td>
+      <td>18 : 31</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 6</td>
+      <td>05 : 40</td>
+      <td>05 : 40</td>
+      <td>07 : 32</td>
+      <td>12 : 13</td>
+      <td>14 : 29</td>
+      <td>16 : 55</td>
+      <td>17 : 20</td>
+      <td>18 : 29</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 7</td>
+      <td>05 : 41</td>
+      <td>05 : 41</td>
+      <td>07 : 34</td>
+      <td>12 : 13</td>
+      <td>14 : 28</td>
+      <td>16 : 53</td>
+      <td>17 : 18</td>
+      <td>18 : 28</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 8</td>
+      <td>05 : 43</td>
+      <td>05 : 43</td>
+      <td>07 : 36</td>
+      <td>12 : 14</td>
+      <td>14 : 26</td>
+      <td>16 : 51</td>
+      <td>17 : 17</td>
+      <td>18 : 27</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 9</td>
+      <td>05 : 44</td>
+      <td>05 : 44</td>
+      <td>07 : 37</td>
+      <td>12 : 14</td>
+      <td>14 : 25</td>
+      <td>16 : 50</td>
+      <td>17 : 15</td>
+      <td>18 : 25</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 10</td>
+      <td>05 : 46</td>
+      <td>05 : 46</td>
+      <td>07 : 39</td>
+      <td>12 : 14</td>
+      <td>14 : 24</td>
+      <td>16 : 48</td>
+      <td>17 : 14</td>
+      <td>18 : 24</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 11</td>
+      <td>05 : 47</td>
+      <td>05 : 47</td>
+      <td>07 : 41</td>
+      <td>12 : 14</td>
+      <td>14 : 23</td>
+      <td>16 : 47</td>
+      <td>17 : 13</td>
+      <td>18 : 23</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 12</td>
+      <td>05 : 49</td>
+      <td>05 : 49</td>
+      <td>07 : 43</td>
+      <td>12 : 14</td>
+      <td>14 : 22</td>
+      <td>16 : 45</td>
+      <td>17 : 11</td>
+      <td>18 : 22</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 13</td>
+      <td>05 : 50</td>
+      <td>05 : 50</td>
+      <td>07 : 44</td>
+      <td>12 : 14</td>
+      <td>14 : 21</td>
+      <td>16 : 44</td>
+      <td>17 : 10</td>
+      <td>18 : 20</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 14</td>
+      <td>05 : 52</td>
+      <td>05 : 52</td>
+      <td>07 : 46</td>
+      <td>12 : 14</td>
+      <td>14 : 19</td>
+      <td>16 : 42</td>
+      <td>17 : 09</td>
+      <td>18 : 19</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 15</td>
+      <td>05 : 53</td>
+      <td>05 : 53</td>
+      <td>07 : 48</td>
+      <td>12 : 14</td>
+      <td>14 : 18</td>
+      <td>16 : 41</td>
+      <td>17 : 07</td>
+      <td>18 : 18</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 16</td>
+      <td>05 : 54</td>
+      <td>05 : 54</td>
+      <td>07 : 50</td>
+      <td>12 : 15</td>
+      <td>14 : 17</td>
+      <td>16 : 40</td>
+      <td>17 : 06</td>
+      <td>18 : 17</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 17</td>
+      <td>05 : 56</td>
+      <td>05 : 56</td>
+      <td>07 : 51</td>
+      <td>12 : 15</td>
+      <td>14 : 16</td>
+      <td>16 : 38</td>
+      <td>17 : 05</td>
+      <td>18 : 16</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 18</td>
+      <td>05 : 57</td>
+      <td>05 : 57</td>
+      <td>07 : 53</td>
+      <td>12 : 15</td>
+      <td>14 : 15</td>
+      <td>16 : 37</td>
+      <td>17 : 04</td>
+      <td>18 : 15</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 19</td>
+      <td>05 : 59</td>
+      <td>05 : 59</td>
+      <td>07 : 55</td>
+      <td>12 : 15</td>
+      <td>14 : 15</td>
+      <td>16 : 36</td>
+      <td>17 : 03</td>
+      <td>18 : 14</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 20</td>
+      <td>06 : 00</td>
+      <td>06 : 00</td>
+      <td>07 : 56</td>
+      <td>12 : 16</td>
+      <td>14 : 14</td>
+      <td>16 : 35</td>
+      <td>17 : 02</td>
+      <td>18 : 13</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 21</td>
+      <td>06 : 01</td>
+      <td>06 : 01</td>
+      <td>07 : 58</td>
+      <td>12 : 16</td>
+      <td>14 : 13</td>
+      <td>16 : 34</td>
+      <td>17 : 01</td>
+      <td>18 : 12</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 22</td>
+      <td>06 : 03</td>
+      <td>06 : 03</td>
+      <td>07 : 59</td>
+      <td>12 : 16</td>
+      <td>14 : 12</td>
+      <td>16 : 33</td>
+      <td>17 : 00</td>
+      <td>18 : 12</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 23</td>
+      <td>06 : 04</td>
+      <td>06 : 04</td>
+      <td>08 : 01</td>
+      <td>12 : 16</td>
+      <td>14 : 11</td>
+      <td>16 : 32</td>
+      <td>16 : 59</td>
+      <td>18 : 11</td>
+      <td>23 : 18</td>
+    </tr>
+    <tr>
+      <td>Nov 24</td>
+      <td>06 : 05</td>
+      <td>06 : 05</td>
+      <td>08 : 03</td>
+      <td>12 : 17</td>
+      <td>14 : 11</td>
+      <td>16 : 31</td>
+      <td>16 : 58</td>
+      <td>18 : 10</td>
+      <td>23 : 19</td>
+    </tr>
+    <tr>
+      <td>Nov 25</td>
+      <td>06 : 07</td>
+      <td>06 : 07</td>
+      <td>08 : 04</td>
+      <td>12 : 17</td>
+      <td>14 : 10</td>
+      <td>16 : 30</td>
+      <td>16 : 57</td>
+      <td>18 : 09</td>
+      <td>23 : 19</td>
+    </tr>
+    <tr>
+      <td>Nov 26</td>
+      <td>06 : 08</td>
+      <td>06 : 08</td>
+      <td>08 : 06</td>
+      <td>12 : 17</td>
+      <td>14 : 09</td>
+      <td>16 : 29</td>
+      <td>16 : 56</td>
+      <td>18 : 09</td>
+      <td>23 : 19</td>
+    </tr>
+    <tr>
+      <td>Nov 27</td>
+      <td>06 : 09</td>
+      <td>06 : 09</td>
+      <td>08 : 07</td>
+      <td>12 : 18</td>
+      <td>14 : 09</td>
+      <td>16 : 28</td>
+      <td>16 : 56</td>
+      <td>18 : 08</td>
+      <td>23 : 19</td>
+    </tr>
+    <tr>
+      <td>Nov 28</td>
+      <td>06 : 10</td>
+      <td>06 : 10</td>
+      <td>08 : 09</td>
+      <td>12 : 18</td>
+      <td>14 : 08</td>
+      <td>16 : 27</td>
+      <td>16 : 55</td>
+      <td>18 : 08</td>
+      <td>23 : 19</td>
+    </tr>
+    <tr>
+      <td>Nov 29</td>
+      <td>06 : 11</td>
+      <td>06 : 11</td>
+      <td>08 : 10</td>
+      <td>12 : 18</td>
+      <td>14 : 08</td>
+      <td>16 : 26</td>
+      <td>16 : 54</td>
+      <td>18 : 07</td>
+      <td>23 : 20</td>
+    </tr>
+    <tr>
+      <td>Nov 30</td>
+      <td>06 : 13</td>
+      <td>06 : 13</td>
+      <td>08 : 12</td>
+      <td>12 : 19</td>
+      <td>14 : 07</td>
+      <td>16 : 26</td>
+      <td>16 : 54</td>
+      <td>18 : 07</td>
+      <td>23 : 20</td>
+    </tr>
+  
+    <tr>
+      <td>Dec 1</td>
+      <td>06 : 14</td>
+      <td>06 : 14</td>
+      <td>08 : 13</td>
+      <td>12 : 19</td>
+      <td>14 : 07</td>
+      <td>16 : 25</td>
+      <td>16 : 53</td>
+      <td>18 : 06</td>
+      <td>23 : 20</td>
+    </tr>
+    <tr>
+      <td>Dec 2</td>
+      <td>06 : 15</td>
+      <td>06 : 15</td>
+      <td>08 : 14</td>
+      <td>12 : 19</td>
+      <td>14 : 06</td>
+      <td>16 : 25</td>
+      <td>16 : 53</td>
+      <td>18 : 06</td>
+      <td>23 : 20</td>
+    </tr>
+    <tr>
+      <td>Dec 3</td>
+      <td>06 : 16</td>
+      <td>06 : 16</td>
+      <td>08 : 16</td>
+      <td>12 : 20</td>
+      <td>14 : 06</td>
+      <td>16 : 24</td>
+      <td>16 : 52</td>
+      <td>18 : 06</td>
+      <td>23 : 21</td>
+    </tr>
+    <tr>
+      <td>Dec 4</td>
+      <td>06 : 17</td>
+      <td>06 : 17</td>
+      <td>08 : 17</td>
+      <td>12 : 20</td>
+      <td>14 : 06</td>
+      <td>16 : 24</td>
+      <td>16 : 52</td>
+      <td>18 : 05</td>
+      <td>23 : 21</td>
+    </tr>
+    <tr>
+      <td>Dec 5</td>
+      <td>06 : 18</td>
+      <td>06 : 18</td>
+      <td>08 : 18</td>
+      <td>12 : 21</td>
+      <td>14 : 06</td>
+      <td>16 : 23</td>
+      <td>16 : 51</td>
+      <td>18 : 05</td>
+      <td>23 : 21</td>
+    </tr>
+    <tr>
+      <td>Dec 6</td>
+      <td>06 : 19</td>
+      <td>06 : 19</td>
+      <td>08 : 19</td>
+      <td>12 : 21</td>
+      <td>14 : 05</td>
+      <td>16 : 23</td>
+      <td>16 : 51</td>
+      <td>18 : 05</td>
+      <td>23 : 21</td>
+    </tr>
+    <tr>
+      <td>Dec 7</td>
+      <td>06 : 20</td>
+      <td>06 : 20</td>
+      <td>08 : 21</td>
+      <td>12 : 22</td>
+      <td>14 : 05</td>
+      <td>16 : 22</td>
+      <td>16 : 51</td>
+      <td>18 : 05</td>
+      <td>23 : 22</td>
+    </tr>
+    <tr>
+      <td>Dec 8</td>
+      <td>06 : 21</td>
+      <td>06 : 21</td>
+      <td>08 : 22</td>
+      <td>12 : 22</td>
+      <td>14 : 05</td>
+      <td>16 : 22</td>
+      <td>16 : 51</td>
+      <td>18 : 05</td>
+      <td>23 : 22</td>
+    </tr>
+    <tr>
+      <td>Dec 9</td>
+      <td>06 : 22</td>
+      <td>06 : 22</td>
+      <td>08 : 23</td>
+      <td>12 : 22</td>
+      <td>14 : 05</td>
+      <td>16 : 22</td>
+      <td>16 : 50</td>
+      <td>18 : 05</td>
+      <td>23 : 22</td>
+    </tr>
+    <tr>
+      <td>Dec 10</td>
+      <td>06 : 23</td>
+      <td>06 : 23</td>
+      <td>08 : 24</td>
+      <td>12 : 23</td>
+      <td>14 : 05</td>
+      <td>16 : 22</td>
+      <td>16 : 50</td>
+      <td>18 : 05</td>
+      <td>23 : 23</td>
+    </tr>
+    <tr>
+      <td>Dec 11</td>
+      <td>06 : 24</td>
+      <td>06 : 24</td>
+      <td>08 : 25</td>
+      <td>12 : 23</td>
+      <td>14 : 05</td>
+      <td>16 : 22</td>
+      <td>16 : 50</td>
+      <td>18 : 05</td>
+      <td>23 : 23</td>
+    </tr>
+    <tr>
+      <td>Dec 12</td>
+      <td>06 : 25</td>
+      <td>06 : 25</td>
+      <td>08 : 26</td>
+      <td>12 : 24</td>
+      <td>14 : 05</td>
+      <td>16 : 22</td>
+      <td>16 : 50</td>
+      <td>18 : 05</td>
+      <td>23 : 24</td>
+    </tr>
+    <tr>
+      <td>Dec 13</td>
+      <td>06 : 25</td>
+      <td>06 : 25</td>
+      <td>08 : 27</td>
+      <td>12 : 24</td>
+      <td>14 : 05</td>
+      <td>16 : 22</td>
+      <td>16 : 50</td>
+      <td>18 : 05</td>
+      <td>23 : 24</td>
+    </tr>
+    <tr>
+      <td>Dec 14</td>
+      <td>06 : 26</td>
+      <td>06 : 26</td>
+      <td>08 : 28</td>
+      <td>12 : 25</td>
+      <td>14 : 05</td>
+      <td>16 : 22</td>
+      <td>16 : 50</td>
+      <td>18 : 05</td>
+      <td>23 : 24</td>
+    </tr>
+    <tr>
+      <td>Dec 15</td>
+      <td>06 : 27</td>
+      <td>06 : 27</td>
+      <td>08 : 29</td>
+      <td>12 : 25</td>
+      <td>14 : 06</td>
+      <td>16 : 22</td>
+      <td>16 : 51</td>
+      <td>18 : 05</td>
+      <td>23 : 25</td>
+    </tr>
+    <tr>
+      <td>Dec 16</td>
+      <td>06 : 28</td>
+      <td>06 : 28</td>
+      <td>08 : 29</td>
+      <td>12 : 26</td>
+      <td>14 : 06</td>
+      <td>16 : 22</td>
+      <td>16 : 51</td>
+      <td>18 : 06</td>
+      <td>23 : 25</td>
+    </tr>
+    <tr>
+      <td>Dec 17</td>
+      <td>06 : 28</td>
+      <td>06 : 28</td>
+      <td>08 : 30</td>
+      <td>12 : 26</td>
+      <td>14 : 06</td>
+      <td>16 : 22</td>
+      <td>16 : 51</td>
+      <td>18 : 06</td>
+      <td>23 : 26</td>
+    </tr>
+    <tr>
+      <td>Dec 18</td>
+      <td>06 : 29</td>
+      <td>06 : 29</td>
+      <td>08 : 31</td>
+      <td>12 : 27</td>
+      <td>14 : 07</td>
+      <td>16 : 23</td>
+      <td>16 : 51</td>
+      <td>18 : 06</td>
+      <td>23 : 26</td>
+    </tr>
+    <tr>
+      <td>Dec 19</td>
+      <td>06 : 30</td>
+      <td>06 : 30</td>
+      <td>08 : 32</td>
+      <td>12 : 27</td>
+      <td>14 : 07</td>
+      <td>16 : 23</td>
+      <td>16 : 52</td>
+      <td>18 : 07</td>
+      <td>23 : 27</td>
+    </tr>
+    <tr>
+      <td>Dec 20</td>
+      <td>06 : 30</td>
+      <td>06 : 30</td>
+      <td>08 : 32</td>
+      <td>12 : 28</td>
+      <td>14 : 07</td>
+      <td>16 : 23</td>
+      <td>16 : 52</td>
+      <td>18 : 07</td>
+      <td>23 : 27</td>
+    </tr>
+    <tr>
+      <td>Dec 21</td>
+      <td>06 : 31</td>
+      <td>06 : 31</td>
+      <td>08 : 33</td>
+      <td>12 : 28</td>
+      <td>14 : 08</td>
+      <td>16 : 24</td>
+      <td>16 : 53</td>
+      <td>18 : 08</td>
+      <td>23 : 28</td>
+    </tr>
+    <tr>
+      <td>Dec 22</td>
+      <td>06 : 31</td>
+      <td>06 : 31</td>
+      <td>08 : 33</td>
+      <td>12 : 29</td>
+      <td>14 : 08</td>
+      <td>16 : 24</td>
+      <td>16 : 53</td>
+      <td>18 : 08</td>
+      <td>23 : 28</td>
+    </tr>
+    <tr>
+      <td>Dec 23</td>
+      <td>06 : 32</td>
+      <td>06 : 32</td>
+      <td>08 : 34</td>
+      <td>12 : 29</td>
+      <td>14 : 09</td>
+      <td>16 : 25</td>
+      <td>16 : 54</td>
+      <td>18 : 09</td>
+      <td>23 : 29</td>
+    </tr>
+    <tr>
+      <td>Dec 24</td>
+      <td>06 : 32</td>
+      <td>06 : 32</td>
+      <td>08 : 34</td>
+      <td>12 : 30</td>
+      <td>14 : 10</td>
+      <td>16 : 26</td>
+      <td>16 : 54</td>
+      <td>18 : 09</td>
+      <td>23 : 29</td>
+    </tr>
+    <tr>
+      <td>Dec 25</td>
+      <td>06 : 33</td>
+      <td>06 : 33</td>
+      <td>08 : 34</td>
+      <td>12 : 30</td>
+      <td>14 : 10</td>
+      <td>16 : 26</td>
+      <td>16 : 55</td>
+      <td>18 : 10</td>
+      <td>23 : 30</td>
+    </tr>
+    <tr>
+      <td>Dec 26</td>
+      <td>06 : 33</td>
+      <td>06 : 33</td>
+      <td>08 : 35</td>
+      <td>12 : 31</td>
+      <td>14 : 11</td>
+      <td>16 : 27</td>
+      <td>16 : 56</td>
+      <td>18 : 11</td>
+      <td>23 : 30</td>
+    </tr>
+    <tr>
+      <td>Dec 27</td>
+      <td>06 : 33</td>
+      <td>06 : 33</td>
+      <td>08 : 35</td>
+      <td>12 : 31</td>
+      <td>14 : 12</td>
+      <td>16 : 28</td>
+      <td>16 : 57</td>
+      <td>18 : 11</td>
+      <td>23 : 31</td>
+    </tr>
+    <tr>
+      <td>Dec 28</td>
+      <td>06 : 33</td>
+      <td>06 : 33</td>
+      <td>08 : 35</td>
+      <td>12 : 32</td>
+      <td>14 : 12</td>
+      <td>16 : 29</td>
+      <td>16 : 57</td>
+      <td>18 : 12</td>
+      <td>23 : 31</td>
+    </tr>
+    <tr>
+      <td>Dec 29</td>
+      <td>06 : 34</td>
+      <td>06 : 34</td>
+      <td>08 : 35</td>
+      <td>12 : 32</td>
+      <td>14 : 13</td>
+      <td>16 : 30</td>
+      <td>16 : 58</td>
+      <td>18 : 13</td>
+      <td>23 : 32</td>
+    </tr>
+    <tr>
+      <td>Dec 30</td>
+      <td>06 : 34</td>
+      <td>06 : 34</td>
+      <td>08 : 35</td>
+      <td>12 : 33</td>
+      <td>14 : 14</td>
+      <td>16 : 30</td>
+      <td>16 : 59</td>
+      <td>18 : 14</td>
+      <td>23 : 32</td>
+    </tr>
+    <tr>
+      <td>Dec 31</td>
+      <td>06 : 34</td>
+      <td>06 : 34</td>
+      <td>08 : 35</td>
+      <td>12 : 33</td>
+      <td>14 : 15</td>
+      <td>16 : 31</td>
+      <td>17 : 00</td>
+      <td>18 : 15</td>
+      <td>23 : 33</td>
+    </tr>
+  </tbody>
+</table>
+    
+</body>
+</html>
