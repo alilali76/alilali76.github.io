@@ -1,0 +1,134 @@
+
+body {
+    font-family: 'Poppins';
+    background: #09121a;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    font-size: 1.4em;
+    text-align: center;
+    color: #2980b9;
+    margin-top: 1.5em;
+}
+
+/* Desktop-Tabelle */
+#gebetszeiten {
+    width: 95%;
+    max-width: 900px;
+    margin: 2em auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+#gebetszeiten thead th {
+    background: #2980b9;
+    color: #fff;
+    font-weight: 600;
+    padding: 1em 0.5em;
+    font-size: 1.2em;
+    border: none;
+}
+#gebetszeiten tbody td {
+    padding: 0.8em 0.5em;
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 1em;
+}
+#gebetszeiten tbody tr:nth-child(even) {
+    background: #f2f6fa;
+}
+#gebetszeiten tbody tr:hover {
+    background: #d6eaf8;
+    transition: background 0.2s;
+}
+
+/* Mobile-Tabelle */
+#gebetszeitenmobil {
+    width: 95%;
+    max-width: 400px;
+    margin: 2em auto;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+#gebetszeitenmobil th {
+    background: #2980b9;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.8em 0.5em;
+    font-size: 1.2em;
+    border: none;
+    text-align: center;
+    width: 45%;
+    border-radius: 0;
+    border-bottom: 1px solid #f2f6fa;
+}
+#gebetszeitenmobil td {
+    font-weight: bolder;
+    padding: 0.8em 0.5em;
+    text-align: center;
+    font-size: 1.2em;
+    background: #f2f6fa;
+    border-bottom: 2px solid #2980b9;
+    width: 55%;
+}
+#gebetszeitenmobil tr {
+    border-radius: 8px;
+    background: #fff;
+}
+
+/* Sammlung ausblenden */
+#gebetszeitensammlung {
+    display: none;
+}
+
+/* Responsive: Mobile zeigt nur die mobile Tabelle, Desktop nur die große */
+@media (max-width: 746px) {
+    html, body {
+        height: 100dvh;
+    }
+    body {
+        min-height: 100dvh;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #gebetszeiten {
+        display: none;
+    }
+    #gebetszeitenmobil {
+        display: table;
+        max-height: calc(100dvh - 6em);
+        overflow-y: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 747px) {
+    #gebetszeiten {
+        display: table;
+    }
+    #gebetszeitenmobil {
+        display: none;
+    }
+}
+
