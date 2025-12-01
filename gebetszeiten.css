@@ -1,4 +1,15 @@
 
+:root {
+    --color-fajr: #0d6efd; /* strong blue */
+    --color-dhuhr: #28a745; /* green */
+    --color-maghrib: #dc3545; /* red */
+    --light-bg: rgba(255,255,255,0.85);
+    /* Mobile-specific softer colors */
+    --color-fajr-mobile: #cde1fe; /* very light blue */
+    --color-dhuhr-mobile: #ccffda; /* very light green */
+    --color-maghrib-mobile: #ffcece; /* very light red/pink */
+}
+
 body {
     font-family: 'Poppins';
     background: #09121a;
@@ -55,6 +66,37 @@ h1, h2, h3 {
     transition: background 0.2s;
 }
 
+/* Highlight important prayers - Desktop (columns) */
+#gebetszeiten thead th:nth-child(3),
+#gebetszeiten tbody td:nth-child(3) {
+    background: linear-gradient(180deg, rgba(13,110,253,0.18), rgba(13,110,253,0.08));
+    color: #07294a;
+    font-weight: 700;
+    border-left: 4px solid var(--color-fajr);
+}
+#gebetszeiten thead th:nth-child(5),
+#gebetszeiten tbody td:nth-child(5) {
+    background: linear-gradient(180deg, rgba(40,167,69,0.18), rgba(40,167,69,0.08));
+    color: #0f3c20;
+    font-weight: 700;
+    border-left: 4px solid var(--color-dhuhr);
+}
+#gebetszeiten thead th:nth-child(8),
+#gebetszeiten tbody td:nth-child(8) {
+    background: linear-gradient(180deg, rgba(220,53,69,0.18), rgba(220,53,69,0.08));
+    color: #3b0e10;
+    font-weight: 700;
+    border-left: 4px solid var(--color-maghrib);
+}
+
+/* Subtle focus on hover for desktop highlighted columns */
+#gebetszeiten tbody td:nth-child(3):hover,
+#gebetszeiten tbody td:nth-child(5):hover,
+#gebetszeiten tbody td:nth-child(8):hover {
+    transform: translateY(-2px);
+    transition: transform 0.12s ease;
+}
+
 /* Mobile-Tabelle */
 #gebetszeitenmobil {
     width: 95%;
@@ -96,6 +138,34 @@ h1, h2, h3 {
     background: #fff;
 }
 
+/* Highlight important prayers - Mobile (rows) */
+/* Mobile: subtle coloring for highlighted rows (softer backgrounds) */
+#gebetszeitenmobil tr:nth-child(3) th,
+#gebetszeitenmobil tr:nth-child(3) td {
+    background: var(--color-fajr-mobile);
+    color: var(--color-fajr);
+}
+#gebetszeitenmobil tr:nth-child(5) th,
+#gebetszeitenmobil tr:nth-child(5) td {
+    background: var(--color-dhuhr-mobile);
+    color: var(--color-dhuhr);
+}
+#gebetszeitenmobil tr:nth-child(8) th,
+#gebetszeitenmobil tr:nth-child(8) td {
+    background: var(--color-maghrib-mobile);
+    color: var(--color-maghrib);
+}
+
+/* Hover highlight for mobile rows */
+/* Mobile hover: subtle lift + slight contrast increase */
+#gebetszeitenmobil tr:nth-child(3):hover,
+#gebetszeitenmobil tr:nth-child(5):hover,
+#gebetszeitenmobil tr:nth-child(8):hover {
+    filter: brightness(1.04);
+    transform: translateY(-1px);
+    transition: transform 0.14s ease, filter 0.14s ease;
+}
+
 /* Sammlung ausblenden */
 #gebetszeitensammlung {
     display: none;
@@ -117,7 +187,6 @@ h1, h2, h3 {
     #gebetszeitenmobil {
         display: table;
         max-height: calc(100dvh - 6em);
-        overflow-y: auto;
         margin-top: 2em;
         margin-bottom: 2em;
     }
